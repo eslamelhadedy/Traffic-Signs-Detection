@@ -74,4 +74,15 @@ with gradio_app:
         with gr.Column():
             app()
 
-gradio_app.launch(debug=True)
+# gradio_app.launch(debug=True)
+
+# gradio_app.launch(server_name="0.0.0.0", server_port=8080, debug=True)
+
+
+gradio_app.launch(
+    server_name="0.0.0.0",
+    server_port=8080,
+    # ssl_keyfile="./key.pem",
+    # ssl_certfile="./cert.pem",
+    debug=True
+)
